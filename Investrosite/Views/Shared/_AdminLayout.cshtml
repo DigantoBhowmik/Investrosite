@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/CSS/StyleSheet1.css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <section>
+        <div class="Topbar">
+            <div class="top">
+                <p>We’re here to provide 24/7 at your service</p>
+            </div>
+            <div class="top">
+                <p><i class="fas fa-phone-alt"></i>01767145146 <i class="far fa-envelope"></i> investrosite@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <header>
+        <nav class="">
+            <ul class="nav-bar">
+                <li><a href="/admin/home">Home</a></li>
+                @if (Session["Name"] != null)
+                {
+                    @*<li><a href="/user/editprofile">My Profile</a></li>*@
+                    <li><a href="/admin/adminlist">Admin List</a></li>
+                    <li><a href="/admin/managerlist">Manager List</a></li>
+                    <li><a href="/admin/investorlist">Investor List</a></li>
+                    <li><a href="/admin/entrepreneurlist">Entrepreneur List</a></li>
+                    <li><a href="/admin/paymentlist">Payment List</a></li>
+                    <li><a href="/admin/reportlist">Complains</a></li>
+                    <li><a href="/user/logOut" style="color:orangered">Logout</a></li>
+                }
+
+
+            </ul>
+        </nav>
+        @if (Session["Name"] != null)
+        {
+
+            <ul class="nav navbar-nav  ">
+                <div class="dropdown">
+                    <button class="btn" type="button" data-toggle="dropdown">
+                        @Session["Name"].ToString()
+                        <span class="caret"></span>
+                    </button>
+                    
+                </div>
+            </ul>
+
+        }
+        else
+        {
+            <li><a class="btn" href="/admin/login">Sign in</a></li>
+        }
+
+
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

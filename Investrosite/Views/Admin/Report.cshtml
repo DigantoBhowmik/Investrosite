@@ -1,0 +1,40 @@
+﻿@model Investrosite.Models.Database.Report
+@{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Support</h2>
+
+<div class="register_page">
+    <div class="register_body">
+        <form method="POST" action="/admin/report">
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Full Name :</label>
+                <input type="text" name="Name" class="form-control" id="formGroupExampleInput">
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label" style="margin-top: 20px">Email :</label>
+                <input type="text" name="Email" class="form-control" id="formGroupExampleInput">
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label" style="margin-top: 20px">Issue :</label>
+                <input type="text" name="Issue" class="form-control" id="formGroupExampleInput">
+                @Html.ValidationMessageFor(model => model.Issue, "", new { @class = "text-danger" })
+
+
+            </div>
+
+            <p>@ViewBag.Msg</p>
+            <input type="submit" name="submit" value="Submit" class="btn btn-primary login_button">
+        </form>
+    </div>
+
+</div>
+

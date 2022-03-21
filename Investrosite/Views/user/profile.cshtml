@@ -1,0 +1,20 @@
+﻿@model Investrosite.Models.Database.Entrepreneur
+@{
+    ViewBag.Title = "profile";
+}
+
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+    <div class="card h-100">
+        <div class="card-body">
+            <div class="account-settings">
+                <div class="user-profile">
+                    <h6 class="user-email"><i class="fas fa-envelope"></i><b> @Model.Role</b></h6>
+                    <h5 class="user-name"><i class="fas fa-user"></i><b> @Model.Name</b></h5>
+                    <h6 class="user-email"><i class="fas fa-envelope"></i><b> @Model.Email</b></h6>
+                    <h5 class="user-name"><i class="fas fa-phone-alt"></i><b> @Model.Phone</b></h5>
+                </div>
+                <a class="btn btn-primary btn-sm shadow-none" href="/user/showpost/@Model.Id">See Post</a>
+            </div>
+        </div>
+    </div>
+</div>

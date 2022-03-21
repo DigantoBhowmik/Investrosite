@@ -1,0 +1,30 @@
+﻿@model Investrosite.Models.Database.Admin
+@{
+    ViewBag.Title = "login";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Adminlogin</h2>
+
+<div class="page">
+    <div class="login_body">
+
+        <form method="POST" action="/admin/login">
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Email :</label>
+                <input type="text" name="Email" class="form-control" id="formGroupExampleInput">
+            </div>
+
+            <div class="mb-3" style="margin-top: 20px">
+                <label for="formGroupExampleInput2" class="form-label">Password :</label>
+                <input type="password" name="Password" class="form-control" id="formGroupExampleInput2">
+            </div>
+            <input type="submit" name="submit" value="Sign in" class="btn btn-primary login_button">
+            <div class="swap_between_login_register">
+                <p>@ViewBag.Msg</p>
+            </div>
+        </form>
+    </div>
+
+</div>

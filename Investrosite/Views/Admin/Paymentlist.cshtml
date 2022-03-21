@@ -1,0 +1,32 @@
+﻿@model List<Investrosite.Models.Database.ViewModel1>
+@{
+    ViewBag.Title = "Paymentlist";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<center><h2>Payment list</h2></center>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-8">
+            <table class="table table-bordered">
+                <tr>
+                    <th> ID</th>
+                    <th> Amount</th>
+                    <th> Entreprenuer</th>
+                    <th> Investor</th>
+                </tr>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td> @p.Id</td>
+                        <td> @p.Amount</td>
+                        <td> @p.E_Name</td>
+                        <td> @p.I_Name</td>
+                    </tr>
+}
+            </table>
+
+        </div>
+    </div>
+</div>

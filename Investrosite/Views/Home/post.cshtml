@@ -1,0 +1,19 @@
+﻿@model Investrosite.Models.Database.Post
+@{
+    ViewBag.Title = "post";
+}
+
+<h2>post</h2>
+<div class="d-flex flex-column comment-section">
+    <h3>Share Your Idea</h3>
+    <div class="bg-light p-2">
+        <form method="POST" action="">
+            <div class="d-flex flex-row align-items-start"><textarea name="Description" type="text" class="form-control ml-1 shadow-none textarea"></textarea></div>
+            <input type="text" name="eid" value=@Session["Id"] class="form-control" id="formGroupExampleInput2" hidden>
+            <input type="text" name="Name" value="@Session["Name"].ToString()" class="form-control" id="formGroupExampleInput2" hidden>
+            <div class="mt-2 text-right"><input type="submit" name="submit" value="Post" class="btn btn-primary btn-sm shadow-none"></div>
+        </form>
+        <p>@ViewBag.Msg</p>
+    </div>
+</div>
+

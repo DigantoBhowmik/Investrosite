@@ -1,0 +1,60 @@
+﻿@model Investrosite.Models.Database.Manager
+@{
+    ViewBag.Title = "CreateManager";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Create Manager</h2>
+
+<div class="register_page">
+    <div class="register_body">
+        <form method="POST" action="/admin/CreateManager">
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Full Name :</label>
+                <input type="text" name="Name" class="form-control" id="formGroupExampleInput">
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label" style="margin-top: 20px">Email :</label>
+                <input type="text" name="Email" class="form-control" id="formGroupExampleInput">
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+
+
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label" style="margin-top: 20px">Phone :</label>
+                <input type="text" name="Phone" class="form-control" id="formGroupExampleInput">
+                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+
+
+            </div>
+
+            <div class="mb-3" style="margin-top: 20px">
+                <label for="formGroupExampleInput2" class="form-label">Password :</label>
+                <input type="password" name="Password" class="form-control" id="formGroupExampleInput2">
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+
+            </div>
+            <div class="mb-3" style="margin-top: 20px">
+                <label for="formGroupExampleInput2" class="form-label">Confirm Password :</label>
+                <input type="password" class="form-control" id="formGroupExampleInput2">
+
+
+
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="Manager" name="Role" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Manager
+                </label>
+            </div>
+            <p>@ViewBag.Msg</p>
+            <input type="submit" name="submit" value="Create" class="btn btn-primary login_button">
+        </form>
+    </div>
+
+</div>

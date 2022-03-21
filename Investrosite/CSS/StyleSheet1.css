@@ -1,0 +1,368 @@
+﻿/*Navbar start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #067DC2;
+    line-height: 30px;
+    color: white;
+}
+
+.top {
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+header {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+#logo {
+    width: 70px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 70px;
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+}
+
+    .nav-bar li a {
+        margin-left: 20px;
+        text-decoration: none;
+        padding: 8px 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .nav-bar li :hover {
+        color: white;
+        background-color: #067DC2;
+        border-radius: 6px;
+    }
+
+.btn {
+    background-color: #067DC2;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-right: 70px;
+}
+
+    .btn:hover {
+        background-color: #3B82F6;
+    }
+/* body start */
+.bgimg {
+    background-image: linear-gradient(0deg, rgba(72, 108, 133, 0.6), rgba(17, 15, 16, 0.6)),url('../image/wallpaperflare.com_wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    height: 500px;
+    /* align-items: center; */
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+#find {
+    padding: 50px 0 20px 0;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.search {
+    text-align: center;
+}
+
+#search-box {
+    font-size: 15px;
+    padding: 15px 490px 15px 10px;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0px;
+}
+
+.bgimg a {
+    text-decoration: none;
+    color: white;
+    background-color: #067DC2;
+    padding: 10px 14px;
+    border-radius: 5px;
+    margin-left: -90px;
+}
+
+    .bgimg a:hover {
+        background-color: #3B82F6;
+    }
+
+#calender {
+    background-color: #1E415A;
+    width: 30%;
+    margin: auto;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+/* image section complete */
+/* image card start */
+#packege-header {
+    text-align: center;
+    margin-top: 30px;
+    color: #3B82F6;
+    font-weight: 900;
+}
+
+
+
+.image-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 45px;
+    margin-right: 42px;
+    margin-left: 42px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.image-card .image-card-banner img {
+    width: 294px;
+    height: 217px;
+    border-radius: 6px 6px 0 0;
+    transition: 1s filter;
+    filter: brightness(100%);
+}
+
+.image-card-banner img:hover {
+    filter: brightness(50%);
+}
+
+.card-details {
+    padding: 10px;
+}
+
+    .card-details h1 {
+        font-size: 15px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif;
+    }
+
+.cards-p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.fa-bolt {
+    color: rgb(190, 117, 22);
+}
+
+.fa-clock {
+    color: #3B82F6;
+}
+
+#price {
+    font-weight: 900;
+    color: cornflowerblue;
+    font-size: 18px;
+}
+
+.image-card {
+    box-shadow: 0px 5px 20px -10px #111;
+    border-radius: 5px;
+}
+/* discount price */
+.best-resorts {
+    padding-top: 20px;
+    background-color: #EFF6FF;
+    padding-bottom: 20px;
+}
+
+.discount-price {
+    text-decoration: line-through;
+    color: rgb(143, 83, 88);
+    font-weight: 800;
+}
+
+.contact {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    background-color: rgba(47, 146, 226, 0.733);
+}
+
+.halfw-left {
+    color: white;
+}
+
+#par {
+    margin-top: 50px;
+}
+
+.contact .halfw-left p {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+
+#conact-heading {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+
+.input-item {
+    padding: 6px 25px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: cornflowerblue;
+}
+
+.fotter {
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 10px;
+    color: white;
+}
+
+.info {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+
+.main {
+    padding: 16px;
+    margin-top: 50px;
+}
+
+.page {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_body {
+    box-shadow: 0px 1px 4px gray;
+    width: 40%;
+    height: auto;
+    display: flow-root;
+    margin: auto;
+    padding: 40px;
+    padding-top: 47px;
+    border-radius: 10px;
+}
+
+.login_button {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+}
+
+.swap_between_login_register {
+    margin-top: 30px;
+    display: flex;
+}
+
+    .swap_between_login_register p {
+        margin-right: 100px;
+    }
+
+.register_page {
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_body {
+    box-shadow: 0px 1px 4px gray;
+    width: 40%;
+    height: auto;
+    display: flow-root;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.createPart {
+    height: auto;
+    margin: 20px;
+}
+body {
+    background: #eee
+}
+
+.date {
+    font-size: 11px
+}
+
+.comment-text {
+    font-size: 12px
+}
+
+.fs-12 {
+    font-size: 12px
+}
+
+.shadow-none {
+    box-shadow: none
+}
+
+.name {
+    color: #007bff
+}
+
+.cursor:hover {
+    color: blue
+}
+
+.cursor {
+    cursor: pointer
+}
+
+.textarea {
+    resize: none
+}
